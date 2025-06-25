@@ -42,28 +42,36 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <div className="py-16">
+    <div className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
           title="What Clients Say About Me"
           eyebrow="Happy Clients"
           description="Don't just take my word for it. Here's what my clients have to say."
         />
-        <div className="mt-16">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index}>
-              <div className="flex gap-4 items-center">
-                <div className="size-14 bg-gray-700 rounded-full inline-flex items-center justify-center">
-                 <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full"/>
+        <div className="mt-16 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="flex gap-8 flex-none">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="max-w-md md:max-w-lg md:p-8">
+                <div className="flex gap-4 items-center">
+                  <div className="size-14 bg-gray-700 rounded-full inline-flex items-center justify-center flex-shrink-0">
+                    <Image
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      className="max-h-full"
+                    />
+                  </div>
+                  <div>
+                    <div className="font-semibold">{testimonial.name}</div>
+                    <div className="text-sm text-white/40">
+                      {testimonial.position}
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <div className="font-semibold">{testimonial.name}</div>
-                  <div className="text-sm text-white/40">{testimonial.position}</div>
-                </div>
-              </div>
-              <p className="mt-4 text-sm">{testimonial.text}</p>
-            </Card>
-          ))}
+                <p className="mt-4 md:mt-6 text-sm md:text-base">{testimonial.text}</p>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </div>
