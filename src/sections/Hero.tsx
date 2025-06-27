@@ -11,7 +11,7 @@ export const HeroSection = () => {
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
-          className="absolute inset-0 -z-30 opacity-5"
+          className="absolute inset-0 -z-50 opacity-5"
           style={{
             backgroundImage: `url(${grainImage.src})`,
           }}
@@ -130,10 +130,12 @@ export const HeroSection = () => {
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white px-6 h-12 rounded-xl bg-white text-gray-900">
-            <span>👋</span>
-            <span className="font-semibold">Let&#39;s Connect</span>
-          </button>
+          <a href="https://www.linkedin.com/in/thomas-amenlemah">
+            <button className="inline-flex items-center gap-2 border z-10 border-white px-6 h-12 rounded-xl bg-white text-gray-900">
+              <span>👋</span>
+              <span className="font-semibold">Let&#39;s Connect</span>
+            </button>
+          </a>
         </div>
       </div>
     </div>

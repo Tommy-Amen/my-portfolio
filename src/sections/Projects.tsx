@@ -1,6 +1,8 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import shushi from "@/assets/images/sushi.png"
+import quickstay from '@/assets/images/quick-stay.png'
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowRightUp from "@/assets/icons/arrow-up-right.svg";
@@ -8,41 +10,41 @@ import grainImage from "@/assets/images/grain.jpg";
 
 const portfolioProjects = [
   {
-    company: "Innovative Co",
-    year: "2021",
+    company: "SaaS Landing",
+    year: "2024",
     title: "Light Saas Landing Page",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "https://tom-saas.netlify.app/",
     image: lightSaasLandingPage,
   },
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Sushi Man",
+    year: "2023",
+    title: "SushiMan Landing Page",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://sushimangh.netlify.app/",
+    image: shushi,
   },
 
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Quick Stay",
+    year: "2025",
+    title: "Hotel Booking Site",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://hotel-bookingsgh.vercel.app/",
+    image: quickstay,
   },
 ];
 
@@ -66,7 +68,7 @@ export const ProjectsSection = () => {
             <div
               className="bg-gray-800 px-8 pt-8 rounded-3xl relative z-0 overflow-hidden  after:content-[''] after:absolute after:inset-0 after:z-10 after:outline after:outline-white/20 after:outline-2 after:-outline-offset-2 after:rounded-3xl after:pointer-events-none md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16"
               style={{
-                top: `calc(64px + ${index * 40}px)`
+                top: `calc(64px + ${index * 40}px)`,
               }}
               key={project.title}
             >
