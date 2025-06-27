@@ -62,9 +62,12 @@ export const ProjectsSection = () => {
           See how I transformed concepts into engaging digital experiences.
         </p>
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, index) => (
             <div
-              className="bg-gray-800 px-8 pt-8 rounded-3xl relative z-0 overflow-hidden  after:content-[''] after:absolute after:inset-0 after:z-10 after:outline after:outline-white/20 after:outline-2 after:-outline-offset-2 after:rounded-3xl after:pointer-events-none md:pt-12 md:px-10 lg:pt-16 lg:px-20"
+              className="bg-gray-800 px-8 pt-8 rounded-3xl relative z-0 overflow-hidden  after:content-[''] after:absolute after:inset-0 after:z-10 after:outline after:outline-white/20 after:outline-2 after:-outline-offset-2 after:rounded-3xl after:pointer-events-none md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16"
+              style={{
+                top: `calc(64px + ${index * 40}px)`
+              }}
               key={project.title}
             >
               <div

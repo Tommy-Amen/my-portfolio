@@ -1,22 +1,21 @@
-import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
-
+import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 const footerLinks = [
   {
     title: "Twitter",
-    href: "#",
+    href: "https://x.com/amen_tommy",
   },
   {
     title: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/tommyeddison?igsh=MWYxMTIxNm9qYzV5eA%3D%3D&utm_source=qr",
   },
   {
     title: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/thomas-amenlemah",
   },
   {
     title: "GitHub",
-    href: "#",
+    href: "https://github.com/Tommy-Amen",
   },
 ];
 
@@ -30,7 +29,7 @@ export const Footer = () => {
           <nav className="flex flex-col md:flex-row items-center gap-8">
             {footerLinks.map((link) => (
               <a
-                href="#"
+                href={link.href}
                 key={link.title}
                 className="inline-flex items-center gap-1.5"
               >

@@ -16,10 +16,12 @@ export const ContactSection = () => {
               </p>
             </div>
             <div>
-              <button className="text-white border border-gray-900 bg-gray-900 inline-flex items-center justify-center gap-2 mt-6 h-12 px-6 md:px-6 rounded-xl font-semibold hover:bg-gray-800 transition-colors w-max">
-                <span className="font-semibold">Contact Me</span>
-                <ArrowUpRightIcon className="size-4" />
-              </button>
+              <a href="https://www.linkedin.com/in/thomas-amenlemah">
+                <button className="text-white border border-gray-900 bg-gray-900 inline-flex items-center justify-center gap-2 mt-6 h-12 px-6 md:px-6 rounded-xl font-semibold hover:bg-gray-800 transition-colors w-max">
+                  <span className="font-semibold">Contact Me</span>
+                  <ArrowUpRightIcon className="size-4" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
